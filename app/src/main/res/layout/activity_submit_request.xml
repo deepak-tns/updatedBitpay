@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context="com.bitpay.bitpay.activity.SubmitRequestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_large"
+        android:paddingRight="@dimen/margin_large"
+        android:paddingTop="@dimen/margin_xlarge"
+        android:focusableInTouchMode="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/greybroder"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="1dip">
+
+            <Spinner
+                android:id="@+id/spinnerAcctNo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/spinnerbg"
+                android:entries="@array/arrayAcNo"
+                android:gravity="center"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                android:textSize="@dimen/font_large" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editRefNo"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="@dimen/margin_large"
+            android:gravity="center"
+            android:hint="@string/hint_edit_ref_no"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_large"
+            android:theme="@style/EditTextStyle" />
+
+        <EditText
+            android:id="@+id/editAmount"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="@dimen/margin_large"
+            android:gravity="center"
+            android:hint="@string/hint_edit_amount"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_large"
+            android:theme="@style/EditTextStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_xXlarge"
+            android:paddingRight="@dimen/margin_large">
+
+            <LinearLayout
+                android:id="@+id/pancardImageLL"
+                android:layout_width="0dip"
+                android:layout_height="150dip"
+                android:layout_weight="1"
+                android:background="@drawable/bg_pancard"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/pancardImageIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/uploadPanIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:scaleType="center"
+                android:src="@drawable/upload_photo" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_xXlarge">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_gravity="bottom"
+                android:background="@drawable/bg_buttons"
+                android:text="@string/btn_submit"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_xxlarge" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

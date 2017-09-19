@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context="com.bitpay.bitpay.activity.VerificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_large">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Transactions Details"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_xlarge" />
+
+        <ImageView
+            android:id="@+id/pdfDownlodeIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|right"
+            android:src="@drawable/pdf_icon"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/transactionTypeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Transaction Type : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/senderIdTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|left"
+                android:text="Sender ID : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/receiverIdTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|left"
+                android:text="Receiver ID : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/receiverMobileTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Receiver Mobile : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/transactionDateTimeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Transactions Date &amp; Time : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/transactionStatusTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Transactions Status : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@drawable/bg_tansfer"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_medium">
+
+            <TextView
+                android:id="@+id/transferBtcTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large" />
+
+            <TextView
+                android:id="@+id/networkFeeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large" />
+
+            <TextView
+                android:id="@+id/totalAmountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

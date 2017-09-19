@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@color/colorLine" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="Hello"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font_large" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="You have successfully sent"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font_large" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_xXlarge"
+        android:text="@string/lbl_tnx_id"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font_large" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="#1234567890"
+        android:textColor="@color/colorTextBit"
+        android:textSize="@dimen/font_xxlarge" />
+</LinearLayout>

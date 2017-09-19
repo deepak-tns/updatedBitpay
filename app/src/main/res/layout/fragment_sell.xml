@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context="com.bitpay.bitpay.fragment.SellBitcoinFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_large">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblCurrentBalanceTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/text_current_balance"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_large" />
+
+                <TextView
+                    android:id="@+id/currentBalanceTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="--"
+                    android:textColor="@color/colorTextBit"
+                    android:textSize="@dimen/font_xxXlarge" />
+
+                <TextView
+                    android:id="@+id/currentInrBalanceTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="--"
+                    android:textColor="@color/colorTextBit"
+                    android:textSize="@dimen/font_xlarge" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/currentBalanceProgressBar"
+                layout="@layout/layout_progress_bar" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@color/colorLine" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_medium">
+
+                <TextView
+                    android:id="@+id/lblSellingRateTV"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/text_selling_rate"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_large" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_large" />
+
+                <TextView
+                    android:id="@+id/amtSellingRateTV"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="--"
+                    android:textColor="@color/colorTextBit"
+                    android:textSize="@dimen/font_large" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/bitcoinRateProgressBar"
+                layout="@layout/layout_progress_bar" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/rateToBitcoinLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/inrCurrency1TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_rs_currency"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large" />
+
+            <EditText
+                android:id="@+id/editAmmountRate"
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/hint_edit_amount"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large"
+                android:theme="@style/EditTextStyle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="="
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large" />
+
+            <TextView
+                android:id="@+id/amtBitcoinTV"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_min_small"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large" />
+
+            <TextView
+                android:id="@+id/symbollBitcoin1TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_bitcoin"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/bitcoinToRateLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/symbollBitcoin2TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_bitcoin"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large" />
+
+
+            <EditText
+                android:id="@+id/editAmmountBit"
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/hint_edit_amount"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large"
+                android:theme="@style/EditTextStyle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="="
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large" />
+
+            <TextView
+                android:id="@+id/amtRateTV"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_min_small"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large" />
+
+            <TextView
+                android:id="@+id/inrCurrency2TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_rs_currency"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/validAmtTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_min_small"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorTextRed"
+            android:textSize="@dimen/font_small" />
+
+        <ImageView
+            android:id="@+id/bitRateIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_large"
+            android:scaleType="center"
+            android:src="@drawable/reverse_r_b" />
+
+        <TextView
+            android:id="@+id/lblMaxAmtTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_large"
+            android:gravity="center_horizontal"
+            android:text="@string/text_max_sell_amt"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_small"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/buttonSell"
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:background="@drawable/bg_buttons"
+            android:text="@string/btn_sell"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_xxlarge" />
+    </LinearLayout>
+</ScrollView>

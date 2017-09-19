@@ -1,0 +1,420 @@
+<resources>
+    <string name="app_name">BitPay</string>
+
+    <!--verification-->
+    <string name="title_verification">Verification</string>
+    <string name="text_verification_msg">BITPAY will send one time message to verify your phone number(carrier charges may applay).</string>
+    <string name="text_read_term">I have read and agree to all</string>
+    <string name="text_term_condition"><u>Terms and Conditions.</u></string>
+    <string name="title_otp">OTP</string>
+    <string name="text_country_code">+91</string>
+    <string name="text_enter_mobile_no">Please enter your 10 digit mobile number</string>
+    <string name="btn_send_otp">Send Otp</string>
+    <string name="btn_resend_otp">ReSend Otp</string>
+    <string name="hint_enter_otp">OTP</string>
+    <string name="text_wait_time">00:30 sec</string>
+    <string name="text_submit">Submit</string>
+    <string name="text_forgot_pin"><u>Forgot PIN ?</u></string>
+    <string name="messageMobileVerified">Mobile Number Authenticated</string>
+    <string name="messageMobileNotVerified">Mobile Number not Authenticated</string>
+    <string name="emptyOtp">Please enter OTP</string>
+    <string name="messageNoValidated">OTP validation successful</string>
+    <string name="messageOtpInvalid">Incorrect OTP</string>
+    <string name="messageOtpResent">OTP Resended</string>
+    <string name="msg_reg_success">You have successfully registered</string>
+    <string name="msg_reg_failed">Verification Failed!</string>
+    <string name="msg_reset_pin_failed">Failed to reset your pin</string>
+    <string name="text_enter_pin">Please enter a four digit PIN</string>
+    <string name="text_note_pin">Please do NOT share your Pin with anyone including BITPAY</string>
+    <string name="msgErrorPin">You are left with 0 more attempts</string>
+    <string name="msgErrorWrongPin">Wrong PIN</string>
+    <!-- dashboard -->
+    <string name="title_home">Dashboard</string>
+    <string name="title_bit_assress">My Bitcoin Address</string>
+    <string name="title_documents">Documents</string>
+    <string name="title_contacts">Contacts Book</string>
+    <string name="title_buy_bitcoins">Buy Bitcoins</string>
+    <string name="title_bank_details">Bank Details</string>
+    <string name="title_transactions">Transactions</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_support">Support</string>
+    <string name="title_about_us">About Us</string>
+
+    <string name="nev_home">Dashboard</string>
+    <string name="nev_bit_assress">My Bitcoin Address</string>
+    <string name="nev_documents">Documents</string>
+    <string name="nev_contacts">Contacts Book</string>
+    <string name="nev_transactions">Transactions</string>
+    <string name="nev_settings">Settings</string>
+    <string name="nev_support">Support</string>
+    <string name="nev_about_us">About Us</string>
+
+    <string name="message_app_exit">Press again to exit app</string>
+
+    <string name="title_tnx_details">Transaction Details</string>
+
+    <string name="menu_mobile_topup">Mobile Top Up</string>
+    <string name="menu_dth_recharge">DTH Recharge</string>
+    <string name="menu_buy_sell">Buy Bitcoins</string>
+    <string name="menu_sell">Sell Bitcoins</string>
+    <string name="menu_send_bitcoin">Transfer Bitcoins</string>
+    <string name="menu_receive_bitcoin">Receive Bitcoins</string>
+    <string name="menu_gas_bill_pay">Gas Bill Payment</string>
+    <string name="menu_electricity_bill_pay">Electricity Bill Payment</string>
+    <string name="title_gas_provider">Gas Provider</string>
+    <string name="title_electricity_provider">Electricity Provider</string>
+    <!-- pin -->
+    <string name="title_new_pin">PIN</string>
+    <string name="title_confirm_pin">Confirm PIN</string>
+    <string name="title_old_pin">Old PIN</string>
+    <!--app_resources-->
+    <string name="pdialog_message_loading">Loading please wait..</string>
+    <string name="alert_message_no_network">Network not available please try again </string>
+    <string name="alert_ok_button_text_no_network">ok</string>
+    <string name="alert_cancel_button_text_no_network">cancel</string>
+    <string name="alert_yes_btn">Yes</string>
+    <string name="alert_no_btn">No</string>
+    <string name="label_ok_button">ok</string>
+    <string name="label_cancel_button">cancel</string>
+    <!--validator-->
+    <string name="error_phone_no_invalid">Please provide 10 digit mobile number</string>
+    <string name="error_dth_no_invalid">Please provide 11 digit dth number start with 0</string>
+    <string name="error_additional_zero">Please provide number without zero</string>
+    <string name="error_invalid_email_id">Please provide valid email id</string>
+    <string name="error_empty_email_id">Please provide  email id</string>
+
+    <!--network response-->
+    <string name="nwk_error_sign_up">Verification error</string>
+    <string name="nwk_response_sign_up">Verification response</string>
+    <string name="nwk_error_reset_pin">Reset Pin error</string>
+    <string name="nwk_response_reset_pin">Reset Pin response</string>
+    <string name="nwk_error_add_contact">Add Contact error</string>
+    <string name="nwk_response_add_contact">Add Contact response</string>
+    <string name="nwk_error_get_contact">Get Contact error</string>
+    <string name="nwk_response_get_contact">Get Contact response</string>
+    <string name="nwk_error_get_balance">Get Current Balance error</string>
+    <string name="nwk_response_get_balance">Get Current Balance response</string>
+    <string name="nwk_error_get_rate">Get Bitcoin Rate error</string>
+    <string name="nwk_response_get_rate">Get Bitcoin Rate response</string>
+    <string name="nwk_error_send_bitcoin">Send Bitcoins error</string>
+    <string name="nwk_response_send_bitcoin">Send Bitcoins response</string>
+    <string name="nwk_error_add_deposit_amt">Deposit Amount error</string>
+    <string name="nwk_error_add_bank_detail">Add Bank Details error</string>
+    <string name="nwk_response_add_bank_detail">Add Bank Details response</string>
+    <string name="nwk_error_add_pan_detail">Add Pancard Details error</string>
+    <string name="nwk_response_add_pan_detail">Add Pancard Details response</string>
+    <string name="nwk_error_get_bank_details">Get Bank Details error</string>
+    <string name="nwk_response_get_bank_details">Get Bank Details response</string>
+    <string name="nwk_error_get_pan_details">Get Pancard Details error</string>
+    <string name="nwk_response_get_pan_details">Get Pancard Details response</string>
+    <string name="nwk_error_buy_bitcoin">Buy Bitcoins error</string>
+    <string name="nwk_response_buy_bitcoin">Buy Bitcoins response</string>
+    <string name="nwk_error_sell_bitcoin">Sell Bitcoins error</string>
+    <string name="nwk_response_sell_bitcoin">Sell Bitcoins response</string>
+    <string name="nwk_error_submit_query">Submit query error</string>
+    <string name="nwk_response_submit_query">Submit query response</string>
+    <string name="nwk_error_edit_profile">Update Profile error</string>
+    <string name="nwk_response_edit_profile">Update Profile response</string>
+    <string name="nwk_error_get_transaction">Get Transaction error</string>
+    <string name="nwk_response_get_transaction">Get Transaction response</string>
+    <string name="nwk_response_recharge">Recharge response</string>
+    <string name="nwk_error_recharge">Recharge error</string>
+    <!--contact-->
+    <string name="text_add_contact">Add New Contact</string>
+    <string name="hint_edit_contact_name">Name</string>
+    <string name="hint_edit_contact_addtrss">Paste or enter bitcoin address</string>
+    <string name="btn_add">Add</string>
+    <string name="text_no_contact">No contacts found !!</string>
+    <string name="msg_add_contact_failed">Failed to add your contact</string>
+    <string name="msg_add_contact_suc">Your contact added successfully</string>
+    <string name="error_empty_name">Please enter Name</string>
+    <string name="error_empty_bit_address">Please enter Bit Address</string>
+    <string name="msg_send_bitcoin_failed">Failed to send your bitcoin</string>
+    <string name="msg_send_bitcoin_suc">Your bitcoin sended successfully</string>
+
+
+    <!-- send bitcoins -->
+    <string name="btn_submit">Submit</string>
+    <string name="btn_pay">Pay</string>
+    <string name="btn_bank_details">See Bank Details</string>
+    <string name="btn_submit_request">Submit Deposit Request</string>
+    <string name="text_pay_online">Pay Online</string>
+    <string name="btn_pay_online">Pay Online</string>
+    <string name="btn_home">Home</string>
+    <string name="text_current_balance">Your current balance</string>
+    <string name="text_buying_rate">1\u0243  Buying rate</string>
+    <string name="text_selling_rate">1\u0243 Selling rate</string>
+    <string name="text_amt_rate">\u20b9 00</string>
+    <string name="text_rs_currency">\u20b9</string>
+    <string name="text_bitcoin">\u0243</string>
+    <string name="hint_edit_amount">Amount</string>
+    <string name="hint_edit_ref_no">Refrence Number</string>
+    <string name="text_receiver_name">Receiver Name</string>
+    <string name="text_bit_amt">Bit Amount</string>
+    <string name="text_rate">Rate</string>
+    <string name="btn_proceed">Proceed</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="lbl_tnx_id">Transaction ID</string>
+    <string name="text_valid_amt"></string>
+    <string name="text_min_amt">*Min \u20b9</string>
+    <string name="text_max_amt">and Max \u20b9</string>
+    <string name="text_max_transfer_amt">*For transferring more than \u20b9 500000, please call on 8267836652</string>
+    <string name="text_max_buy_amt">*For buy more than \u20b9 500000, please call on 8267836652</string>
+    <string name="text_max_sell_amt">*For sell more than \u20b9 500000, please call on 8267836652</string>
+    <string name="error_invalid_amt">Please enter valid amount</string>
+    <string name="error_empty_amt">Please enter amount</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- home -->
+    <string name="tab_activity">Activities</string>
+    <string name="tab_your_activity">Your Activities</string>
+
+    <!-- document -->
+    <string name="tab_pancard">Pancard</string>
+    <string name="tab_account">Bank Details</string>
+    <string name="tab_kyc_details">Kyc Details</string>
+    <string name="btn_update">Update</string>
+    <string name="text_enter_pancard">Please enter following details as per your PAN CARD</string>
+    <string name="hint_edit_first_name">First Name</string>
+    <string name="hint_edit_last_name">Last Name</string>
+    <string name="hint_edit_pan_number">PAN Card Number</string>
+    <string name="hint_edit_dob">DOB</string>
+    <string name="hint_edit_gender">Gender</string>
+    <string name="text_verification">✔ Your verification can take upto 3 working days</string>
+    <string name="text_enter_kyc">Please enter following details</string>
+    <string name="hint_edit_address1">Address line1</string>
+    <string name="hint_edit_address2">Address line2</string>
+    <string name="hint_edit_landmark">Landmark</string>
+    <string name="hint_edit_city">City</string>
+    <string name="hint_edit_state">State</string>
+    <string name="hint_edit_pincode">Pincode</string>
+    <string name="hint_gender">Gender</string>
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="text_enter_bank_account">Please enter following details as per your bank account</string>
+    <string name="hint_edit_ifsc">IFSC Code</string>
+    <string name="hint_edit_bank_name">Bank Name</string>
+    <string name="hint_edit_branch_name">Branch Name</string>
+    <string name="hint_edit_holder_name">Account Holder Name</string>
+    <string name="hint_edit_account_number">Account Number</string>
+    <string name="hint_edit_confirm_account">Confirm Account Number</string>
+    <string name="text_node1">✔ Please submit correct bank account number details as it can take upto 7 days to update the details.</string>
+    <string name="text_node2">✔ NRE/NRI and OCI accounts are not supported.</string>
+    <string name="text_node3">✔ Your verification can take upto 3 working days.</string>
+    <string name="error_empty_ifsc_code">Please enter ifsc code</string>
+    <string name="error_empty_bank_name">Please enter bank name</string>
+    <string name="error_empty_branch_name">Please enter branch name</string>
+    <string name="error_empty_account_holder">Please enter account holder name</string>
+    <string name="error_empty_account_number">Please enter account number</string>
+    <string name="error_conf_ac_notmatch">Account Number does not match</string>
+    <string name="error_minlength_account">Please enter valid account number</string>
+    <string name="msg_add_bank_details_failed">Failed to add bank details</string>
+    <string name="msg_add_bank_details_suc">Your bank details saved successfully</string>
+    <string name="msg_add_deposit_amt_failed">Failed to submit your request</string>
+    <string name="msg_add_deposit_amt_suc">Your request submitted successfully</string>
+    <string name="select_option">Select Option</string>
+    <string name="option_take_photo">Take Photo</string>
+    <string name="option_gallery">Choose From Gallery</string>
+    <string name="option_cancel">Cancel</string>
+    <string name="error_uploading_image">error uploading image</string>
+    <string name="message_image_upload_fail">Failed to upload Image.</string>
+    <string name="message_image_upload_suc">Image uploaded successfully</string>
+    <string name="error_empty_image">Please upload image first</string>
+    <string name="error_empty_first_name">Please enter first name</string>
+    <string name="error_empty_last_name">Please enter last name</string>
+    <string name="error_empty_pan_number">Please enter pan card number</string>
+    <string name="error_invalid_pan_number">Please enter valid pan card number</string>
+    <string name="error_empty_gender">Please select gender</string>
+    <string name="error_empty_ref_no">Please enter refrence number</string>
+    <string name="msg_add_pan_details_failed">Failed to add pancard details</string>
+    <string name="msg_add_pan_details_suc">Your pancard details saved successfully</string>
+    <string name="error_empty_address">Please enter address</string>
+    <string name="error_empty_landmark">Please enter landmark</string>
+    <string name="error_empty_city">Please enter city</string>
+    <string name="error_empty_state">Please enter state</string>
+    <string name="error_empty_pincode">Please enter pincode</string>
+    <string name="msg_add_kyc_details_failed">Failed to add KYC details</string>
+    <string name="msg_add_kyc_details_suc">Your KYC details saved successfully</string>
+    <!-- byshell bitcoin -->
+    <string name="title_buysell">Sell Bitcoins</string>
+
+    <string name="tab_buy">Buy</string>
+    <string name="tab_sell">Sell</string>
+    <string name="btn_buy">Buy</string>
+    <string name="btn_sell">Sell</string>
+    <string name="text_amount_paid">Amount To Be Paid</string>
+    <string name="text_network_fee">Estimated Network Fee</string>
+    <!-- Payment -->
+    <string name="title_pay_u_activity">Payment</string>
+    <string name="message_cancel_transaction">Are you sure you want to cancel transaction?.</string>
+    <string name="title_cancel_transaction">Cancel Transaction</string>
+    <string name="msg_transaction_cancel">Your transaction has been cancelled.</string>
+    <string name="msg_transaction_failed">OOps! Payment Failed, Please try again.</string>
+    <string name="msg_transaction_success">Your amount has been received by Bitpay</string>
+    <string name="msg_buy_bitcoins_failed">Failed to buy bitcoins</string>
+    <string name="msg_buy_bitcoins_suc">You have successfully bought bitcoins</string>
+    <string name="msg_sell_bitcoins_failed">Failed to sell bitcoins</string>
+    <string name="msg_sell_bitcoins_suc">You have successfully sold bitcoins</string>
+    <string name="msg_submit_query_failed">Failed to submit your query</string>
+    <string name="msg_submit_query_suc">Your query has been submitted successfully</string>
+
+    <!-- support -->
+    <string name="hint_email">Email ID</string>
+    <string name="hint_query">Please Tell Us About Your Query</string>
+    <string name="error_empty_query">Please enter your query</string>
+    <!-- about us -->
+    <string name="text_company_name">Bitpay IT Services PVT Ltd</string>
+    <string name="text_company_website">www.bitpay.co.in</string>
+    <string name="text_version_code">Version:</string>
+    <string name="text_all_right">All Rights Reserved</string>
+    <!-- profile -->
+    <string name="title_profile">Profile</string>
+    <string name="text_reset_pin"><u>Reset PIN</u></string>
+    <string name="message_profile_updated">Profile updated successfully</string>
+    <string name="message_profile_update_fail">Failed to update Profile.</string>
+    <string name="message_image_updated">Image updated successfully</string>
+    <string name="alert_updating_profile">Error occurred in updating profile</string>
+    <string name="alert_title_oops">oops</string>
+    <string name="alert_message_upload_image">Are you sure you want to upload image?. </string>
+
+    <!-- topup -->
+    <string name="enter_min_amount">Please enter minimum recharge amount \u20b9 10</string>
+    <string name="enter_min_deposit_amount">Please enter minimum amount \u20b9</string>
+    <string name="enter_valid_amount">Please enter Valid amount</string>
+    <string name="error_enter_phone_number">Please enter Phone Number</string>
+    <string name="error_enter_dth_number">Please enter Dth Number</string>
+    <string name="error_enter_consumer_number">Please enter Consumer Number</string>
+    <string name="error_enter_customer_number">Please enter Customer Number</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="amount">Amount</string>
+    <string name="error_connection_type">Please Select Connection Type</string>
+    <string name="error_select_connection_provider">Please Select Connection Provider</string>
+    <string name="connectionType">Connection Type</string>
+    <string name="text_transaction_id">Transaction Id</string>
+    <string name="text_thank_you">Thanks for using Bitpay</string>
+    <string name="text_mobile_recharge_msg">Your transaction was successful</string>
+    <string name="text_transaction_id_value"><u>#1212121212.</u></string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="dthNumber">DTH Number</string>
+    <string name="gasNumber">Consumer Number</string>
+    <string name="elecricityNumber">Customer Number</string>
+    <string name="msg_recharge_failed">Failed to recharge your mobile</string>
+    <string name="msg_recharge_suc">Your mobile has been recharged successfully </string>
+    <string name="hint_edit_mobile">Mobile Number</string>
+    <string name="hint_edit_dth">Dth Number</string>
+    <string name="hint_edit_gas">Consumer Number</string>
+    <string name="hint_edit_electric">Customer Number</string>
+    <string name="error_document_status">Please verify your documents and emailid</string>
+    <string name="msg_recharge_dth_failed">Failed to recharge your Dth</string>
+    <string name="msg_recharge_dth_suc">Your Dth has been recharged successfully </string>
+    <string name="msg_recharge_gas_failed">Your Gas bill payment has been failed.</string>
+    <string name="msg_recharge_gas_suc">Your Gas bill payment has been successed. </string>
+    <string name="msg_recharge_elecricity_failed">Your Electricity bill payment has been failed.</string>
+    <string name="msg_recharge_elecricity_suc">Your Electricity bill payment has been successed. </string>
+
+    <string name="bitAddressLbl1">The Bitcoin address is already created for you.\nYou can receive Bitcoin at the address mentioned above.</string>
+    <string name="bitAddressLbl2">You can Copy or Share or Scan. It\'s easy!</string>
+
+    <!-- bank_details -->
+    <string name="msg_holder_name">Holder Name</string>
+    <string name="msg_ac_number">A/C Number</string>
+    <string name="msg_bank_name">Bank Name</string>
+    <string name="msg_branch_name">Branch Name</string>
+    <string name="msg_ifsc_name">IFSC Code</string>
+
+    <string name="lanel_ac_name_1">Bitpay Traders</string>
+    <string name="lanel_ac_number_1">916020055870649</string>
+    <string name="lanel_bank_name_1">Axis Bank Ltd.</string>
+    <string name="lanel_branch_name_1">Jamshedpur (JH)</string>
+    <string name="lanel_ifsc_name_1">UTIB0000012</string>
+
+    <string name="lanel_ac_name_2">Bitpay Traders</string>
+    <string name="lanel_ac_number_2">50200021906812</string>
+    <string name="lanel_bank_name_2">Hdfc bank Ltd</string>
+    <string name="lanel_branch_name_2">Jharkhand</string>
+    <string name="lanel_ifsc_name_2">HDFC0002700</string>
+
+    <string name="lanel_ac_name_3">Bitpay Traders</string>
+    <string name="lanel_ac_number_3">916020083783744</string>
+    <string name="lanel_bank_name_3">Axis bank ltd.</string>
+    <string name="lanel_branch_name_3">Bhagal, Surat</string>
+    <string name="lanel_ifsc_name_3">UTIB0001683</string>
+
+
+    <string name="lanel_ac_name_4">Coin Traders</string>
+    <string name="lanel_ac_number_4">916020084422022</string>
+    <string name="lanel_bank_name_4">Axis bank ltd.</string>
+    <string name="lanel_branch_name_4">Bhagal, Surat</string>
+    <string name="lanel_ifsc_name_4">UTIB0001683</string>
+
+
+    <string name="lanel_ac_name_5">Coin Traders</string>
+    <string name="lanel_ac_number_5">0146102000108669</string>
+    <string name="lanel_bank_name_5">IDBI BANK</string>
+    <string name="lanel_branch_name_5">Ring road branch, Surat</string>
+    <string name="lanel_ifsc_name_5">IBKL0000146</string>
+
+
+    <string name="lanel_ac_name_7">Bitpay Traders</string>
+    <string name="lanel_ac_number_7">0146102000108775</string>
+    <string name="lanel_bank_name_7">IDBI BANK</string>
+    <string name="lanel_branch_name_7">Ring road branch, Surat</string>
+    <string name="lanel_ifsc_name_7">IBKL0000146</string>
+
+
+    <string name="lanel_ac_name_6">Coin Traders</string>
+    <string name="lanel_ac_number_6">259327371314</string>
+    <string name="lanel_bank_name_6">Indusind bank ltd.</string>
+    <string name="lanel_branch_name_6">Surat</string>
+    <string name="lanel_ifsc_name_6">INDB000023</string>
+
+
+    <string name="lanel_ac_name_8">Bitpay Traders</string>
+    <string name="lanel_ac_number_8">259327371313</string>
+    <string name="lanel_bank_name_8">Indusind bank ltd.</string>
+    <string name="lanel_branch_name_8">Surat</string>
+    <string name="lanel_ifsc_name_8">INDB000023</string>
+
+
+    <string name="lanel_ac_name_9">Bitpay Traders</string>
+    <string name="lanel_ac_number_9">916020055870649</string>
+    <string name="lanel_bank_name_9">Axis Bank Ltd.</string>
+    <string name="lanel_branch_name_9">Jamshedpur (JH)</string>
+    <string name="lanel_ifsc_name_9">UTIB0000012</string>
+
+    <string name="label_payee_name">Payee Name</string>
+    <string name="label_payee_reference_no">Reference Numberr</string>
+    <string name="label_payee_amount">Amount</string>
+
+    <string-array name="arrayAcNo">
+        <item>Select Account Number</item>
+        <item>916020055870649</item>
+        <item>50200021906812</item>
+        <item>916020083783744</item>
+        <item>916020084422022</item>
+        <item>0146102000108669</item>
+        <item>259327371314</item>
+        <item>0146102000108775</item>
+        <item>259327371313</item>
+        <item>916020055870649</item>
+    </string-array>
+
+    <string name="text_pan1">✔ This is used to verify your identity.</string>
+    <string name="text_pan2">✔ We do not get access to your tax filings or any other financial data. </string>
+    <string name="text_pan3">✔ Changing make later is not permitted.</string>
+    <string name="text_pan4">✔ Please make sure you enter the correct PAN.</string>
+    <string name="text_pan5">✔ Your Verification can take up to 3 working days.</string>
+
+    <string name="text_deposit1">(RTGS/NEFT/IMPS min: 1000 \u20b9, max: 500000 \u20b9)</string>
+    <string name="text_deposit2">✔ Cash deposit are strictly not allowed.</string>
+    <string name="text_deposit3">✔ Always submit your correct payment reference from your bank statement only.</string>
+    <string name="text_deposit4">✔ Payments less than the minimum amount will not be accepted.</string>
+    <string name="text_deposit5">✔ Pay only via RTGS, NEFT, IMPS or same bank to bank option only.</string>
+    <string name="text_deposit6">✔ In case of any other bank account used for transfer, funds will be returned to you after 15 days and penalty of ₹ 500.</string>
+</resources>

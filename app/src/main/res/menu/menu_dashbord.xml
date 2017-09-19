@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuMobileTopup"
+        android:icon="@drawable/mobile_topup"
+        android:title="@string/menu_mobile_topup"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menuDthRecharge"
+        android:icon="@drawable/d2h"
+        android:title="@string/menu_dth_recharge"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menuGasBillPayment"
+        android:icon="@drawable/gas"
+        android:title="@string/menu_gas_bill_pay"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/menuElectricityBillPayment"
+        android:icon="@drawable/electricity"
+        android:title="@string/menu_electricity_bill_pay"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menuBuyShell"
+        android:icon="@drawable/buy_sell"
+        android:title="@string/menu_buy_sell" />
+
+    <item
+        android:id="@+id/menuShell"
+        android:icon="@drawable/buy_sell"
+        android:title="@string/menu_sell" />
+
+    <item
+        android:id="@+id/menuSendBitcoin"
+        android:icon="@drawable/transfer"
+        android:title="@string/menu_send_bitcoin" />
+    <item
+        android:id="@+id/menuReceiveBitcoin"
+        android:icon="@drawable/sent_receive"
+        android:title="@string/menu_receive_bitcoin" />
+
+</menu>

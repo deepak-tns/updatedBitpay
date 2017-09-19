@@ -1,0 +1,150 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context="com.bitpay.bitpay.fragment.BitAddressFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_large">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/bitcoinRateCV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            card_view:cardBackgroundColor="@color/colorWhite"
+            card_view:cardCornerRadius="5dip"
+            card_view:cardElevation="3dip"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_medium">
+
+                <TextView
+                    android:id="@+id/lblBitcoinTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Bitcoin address"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_large" />
+
+                <TextView
+                    android:id="@+id/textBitcoinTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorTextBit"
+                    android:textSize="@dimen/font_xlarge" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/buttonCopyIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/copy" />
+
+                <TextView
+                    android:id="@+id/copyTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:gravity="center"
+                    android:text="Bitcoin Address Copy"
+                    android:textColor="@color/colorTextBit"
+                    android:textSize="@dimen/font_medium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/buttonShareIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/share" />
+
+                <TextView
+                    android:id="@+id/shareTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:gravity="center"
+                    android:text="Bitcoin Address Share"
+                    android:textColor="@color/colorTextBit"
+                    android:textSize="@dimen/font_medium" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/buttonScanIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lbl1TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:gravity="center"
+            android:text="@string/bitAddressLbl1"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_large" />
+
+        <TextView
+            android:id="@+id/lbl2TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:gravity="center"
+            android:text="@string/bitAddressLbl2"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_large" />
+    </LinearLayout>
+</ScrollView>

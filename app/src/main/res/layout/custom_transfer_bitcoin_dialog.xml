@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_popup_dialog"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_large">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblReceiverNameTV"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/text_receiver_name"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_large"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/font_large">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textReceiverNameTV"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:gravity="right|center_horizontal"
+            android:textColor="@color/colorTextBit"
+            android:textSize="@dimen/font_large"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblBitAmtTV"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/text_bit_amt"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_large"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/font_large">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textBitAmtTV"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center_horizontal"
+            android:text=""
+            android:textColor="@color/colorTextBit"
+            android:textSize="@dimen/font_large"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblRateAmtTV"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/text_rate"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_large"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/font_large">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textRateAmtTV"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:gravity="right|center_horizontal"
+            android:textColor="@color/colorTextBit"
+            android:textSize="@dimen/font_large"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/networkFeeLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/lblNetworkFeeTV"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/text_network_fee"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_large"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/font_large">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textNetworkFeeTV"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center_horizontal"
+            android:text=""
+            android:textColor="@color/colorTextBit"
+            android:textSize="@dimen/font_large"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/margin_min_small"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnProceed"
+                android:layout_width="150dip"
+                android:layout_height="45dip"
+                android:background="@drawable/bg_dialog_buttons"
+                android:text="@string/btn_proceed"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin_min_small"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="150dip"
+                android:layout_height="45dip"
+                android:background="@drawable/bg_dialog_buttons"
+                android:text="@string/btn_cancel"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_large" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

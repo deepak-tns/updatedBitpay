@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "562477493161",
+    "firebase_url": "https://bitpay-a9cfc.firebaseio.com",
+    "project_id": "bitpay-a9cfc",
+    "storage_bucket": "bitpay-a9cfc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562477493161:android:c7dcbb61fc607bce",
+        "android_client_info": {
+          "package_name": "com.bitpay.bitpay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "562477493161-9eub1pbnehvn0ifltkdtvkc3hskqkqbq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWPDmMML6AIW8W8giLXZm6ns8IeI6yrfo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

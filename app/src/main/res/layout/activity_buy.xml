@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_large"
+    android:paddingRight="@dimen/margin_large"
+    android:paddingTop="@dimen/margin_medium">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblCurrentBalanceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_current_balance"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large" />
+
+            <TextView
+                android:id="@+id/currentBalanceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="--"
+                android:textColor="@color/colorTextBit"
+                android:textSize="@dimen/font_xxXlarge" />
+
+            <TextView
+                android:id="@+id/currentInrBalanceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="--"
+                android:textColor="@color/colorTextBit"
+                android:textSize="@dimen/font_xlarge" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/currentBalanceProgressBar"
+            layout="@layout/layout_progress_bar" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBankDetails"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_weight="1"
+            android:background="@drawable/bg_buttons"
+            android:text="@string/btn_bank_details"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_medium" />
+
+        <Button
+            android:id="@+id/btnSubmitRequest"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_weight="1"
+            android:background="@drawable/bg_buttons"
+            android:text="@string/btn_submit_request"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_medium" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPayOnline"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_marginTop="@dimen/margin_large"
+        android:background="@drawable/bg_buttons"
+        android:text="@string/btn_pay_online"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/font_medium" />
+
+    <TextView
+        android:id="@+id/textDeposit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center"
+        android:text="@string/text_deposit1"
+        android:textColor="@color/colorTextBit"
+        android:textSize="@dimen/font_medium" />
+
+    <TextView
+        android:id="@+id/textDeposit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_marginTop="@dimen/margin_xXlarge"
+        android:gravity="left"
+        android:text="@string/text_deposit2"
+        android:textColor="@color/colorTextBit"
+        android:textSize="@dimen/font_large" />
+
+    <TextView
+        android:id="@+id/textDeposit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/text_deposit3"
+        android:textColor="@color/colorTextBit"
+        android:textSize="@dimen/font_large" />
+
+    <TextView
+        android:id="@+id/textDeposit4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/text_deposit4"
+        android:textColor="@color/colorTextBit"
+        android:textSize="@dimen/font_large" />
+
+    <TextView
+        android:id="@+id/textDeposit5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/text_deposit5"
+        android:textColor="@color/colorTextBit"
+        android:textSize="@dimen/font_medium" />
+
+    <TextView
+        android:id="@+id/textDeposit6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/text_deposit6"
+        android:textColor="@color/colorTextBit"
+        android:textSize="@dimen/font_medium" />
+
+</LinearLayout>

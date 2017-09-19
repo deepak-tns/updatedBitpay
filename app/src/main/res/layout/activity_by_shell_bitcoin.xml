@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/margin_large"
+    tools:context="com.bitpay.bitpay.activity.BySellBitcoinActivity">
+
+    <RelativeLayout
+        android:id="@+id/tabRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/balanceRelativeLayout"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@color/colorTnxLine"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/tab_color_selector"
+            android:visibility="gone"
+            android:padding="1dp">
+
+            <!-- our tablayout to display tabs  -->
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                app:tabBackground="@drawable/first_tab_selected"
+                app:tabIndicatorColor="@android:color/transparent"
+                app:tabSelectedTextColor="@color/colorWhite" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <!-- View pager to swipe views -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabRelativeLayout" />
+
+</LinearLayout>

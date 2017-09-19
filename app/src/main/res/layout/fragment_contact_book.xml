@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_large"
+    android:paddingRight="@dimen/margin_large"
+    android:paddingTop="@dimen/margin_large"
+    tools:context="com.bitpay.bitpay.fragment.ContactBookFragment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        card_view:cardBackgroundColor="@color/colorWhite"
+        card_view:cardCornerRadius="5dip"
+        card_view:cardElevation="3dip"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_medium">
+
+            <TextView
+                android:id="@+id/addContactTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/text_add_contact"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/font_large" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:hint="@string/hint_edit_contact_name"
+                android:inputType="text"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large"
+                android:theme="@style/EditTextStyle" />
+
+            <EditText
+                android:id="@+id/editBitAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:hint="@string/hint_edit_contact_addtrss"
+                android:inputType="text"
+                android:textColor="@color/colorTextBit"
+                android:textColorHint="@color/colorTextBit"
+                android:textSize="@dimen/font_large"
+                android:theme="@style/EditTextStyle" />
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="150dip"
+                android:layout_height="45dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@drawable/bg_buttons"
+                android:text="@string/btn_add"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_xlarge" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/noContactTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_xXXlarge"
+        android:gravity="center"
+        android:text="@string/text_no_contact"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font_large"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contactRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:visibility="gone"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

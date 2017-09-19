@@ -1,0 +1,41 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dip</dimen>
+    <dimen name="activity_vertical_margin">16dip</dimen>
+    <dimen name="fab_margin">16dip</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!-- activity fonts-->
+    <dimen name="font_toolbar_title">8sp</dimen>
+    <dimen name="font_minsmall">12sp</dimen>
+    <dimen name="font_small">14sp</dimen>
+    <dimen name="font_medium">16sp</dimen>
+    <dimen name="font_large">18sp</dimen>
+    <dimen name="font_xlarge">22sp</dimen>
+    <dimen name="font_xxlarge">26sp</dimen>
+    <dimen name="font_xxXlarge">32sp</dimen>
+    <dimen name="font_xxXXlarge">50sp</dimen>
+    <dimen name="font_xxxXXlarge">70sp</dimen>
+
+    <!-- activity margins-->
+    <dimen name="margin_min_small">2.5dip</dimen>
+    <dimen name="margin_small">5dip</dimen>
+    <dimen name="margin_medium">10dip</dimen>
+    <dimen name="margin_large">20dip</dimen>
+    <dimen name="margin_xlarge">30dip</dimen>
+    <dimen name="margin_xXlarge">41dip</dimen>
+    <dimen name="margin_xXXlarge">55dip</dimen>
+    <dimen name="margin_xxXXlarge">70dip</dimen>
+    <dimen name="margin_xxxXXlarge">90dip</dimen>
+
+    <dimen name="activity_horizontal_margin_negative">-22dp</dimen>
+    <dimen name="activity_vertical_margin_negative">-22dp</dimen>
+
+
+    <!--dashboard-->
+    <dimen name="circle_profile_image_size">80dip</dimen>
+    <dimen name="button_elevation_material">6dip</dimen>
+    <dimen name="button_pressed_z_material">6dip</dimen>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:background="@drawable/bg_app"
+    tools:context="com.bitpay.bitpay.fragment.SupportFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_large">
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="@dimen/margin_large"
+            android:gravity="center"
+            android:hint="@string/hint_edit_contact_name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_large"
+            android:theme="@style/EditTextStyle" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="@dimen/margin_large"
+            android:gravity="center"
+            android:hint="@string/hint_email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_large"
+            android:theme="@style/EditTextStyle" />
+
+        <EditText
+            android:id="@+id/editquery"
+            android:layout_width="match_parent"
+            android:layout_height="180dip"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@drawable/bg_support_edit"
+            android:gravity="center_horizontal"
+            android:hint="@string/hint_query"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:padding="@dimen/margin_large"
+            android:singleLine="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_large" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:background="@drawable/bg_buttons"
+            android:text="@string/text_submit"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_xxlarge" />
+
+    </LinearLayout>
+</ScrollView>

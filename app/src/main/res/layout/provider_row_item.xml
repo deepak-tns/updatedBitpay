@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:background="@drawable/bg_contact_row"
+    android:gravity="center"
+    android:layout_marginBottom="@dimen/margin_large"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/connectionProviderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font_large" />
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    tools:context="com.bitpay.bitpay.activity.DashboardActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- The main content view -->
+
+        <LinearLayout
+            android:id="@+id/fragmentContainerWithToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </LinearLayout>
+
+        <!-- The navigation drawer -->
+
+        <LinearLayout
+            android:id="@+id/containerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:focusableInTouchMode="false"
+            android:background="@color/colorDrawer"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_small"
+                android:paddingTop="@dimen/margin_medium">
+
+                <com.bitpay.bitpay.widgets.CircularImageView
+                    android:id="@+id/circleImageDrawerProfile"
+                    android:layout_width="130dip"
+                    android:layout_height="130dip"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dip"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/logo_drawer">
+
+                </com.bitpay.bitpay.widgets.CircularImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="-50dip"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Welcome"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/font_large" />
+
+                        <TextView
+                            android:id="@+id/textUserMobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="0000000000"
+                            android:layout_marginTop="@dimen/margin_min_small"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/font_large" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="50dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right|center"
+                        android:paddingRight="@dimen/margin_large">
+
+                        <ImageView
+                            android:id="@+id/editUserProfileIV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/edit" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/colorWhiteLine" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerNavigationDrawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:choiceMode="singleChoice"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</FrameLayout>

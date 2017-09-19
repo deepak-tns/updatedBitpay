@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:context="com.bitpay.bitpay.fragment.BankSetailsFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_large"
+            android:paddingRight="@dimen/margin_large">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_xXlarge"
+                android:paddingRight="@dimen/margin_large">
+
+                <LinearLayout
+                    android:id="@+id/pancardImageLL"
+                    android:layout_width="0dip"
+                    android:layout_height="180dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_pancard"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/pancardImageIV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="center"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/uploadPanIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:scaleType="center"
+                    android:src="@drawable/upload_photo" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/statusTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/margin_small"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/colorPending"
+                android:textSize="@dimen/font_xlarge" />
+
+            <TextView
+                android:id="@+id/lblBankAccountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:gravity="center_horizontal"
+                android:text="@string/text_enter_bank_account"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large" />
+
+            <EditText
+                android:id="@+id/editIfscCode"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="@dimen/margin_large"
+                android:gravity="center"
+                android:hint="@string/hint_edit_ifsc"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large"
+                android:theme="@style/EditTextStyle" />
+
+            <EditText
+                android:id="@+id/editBankName"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="@dimen/margin_large"
+                android:gravity="center"
+                android:hint="@string/hint_edit_bank_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large"
+                android:theme="@style/EditTextStyle" />
+
+            <EditText
+                android:id="@+id/editBranchName"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="@dimen/margin_large"
+                android:gravity="center"
+                android:hint="@string/hint_edit_branch_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large"
+                android:theme="@style/EditTextStyle" />
+
+            <EditText
+                android:id="@+id/editAccountHolderName"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="@dimen/margin_large"
+                android:gravity="center"
+                android:hint="@string/hint_edit_holder_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large"
+                android:theme="@style/EditTextStyle" />
+
+            <EditText
+                android:id="@+id/editAccountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="@dimen/margin_large"
+                android:gravity="center"
+                android:hint="@string/hint_edit_account_number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large"
+                android:theme="@style/EditTextStyle" />
+
+            <EditText
+                android:id="@+id/editConfAccountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="@dimen/margin_large"
+                android:gravity="center"
+                android:hint="@string/hint_edit_confirm_account"
+                android:imeOptions="actionDone"
+                android:inputType="numberPassword"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large"
+                android:theme="@style/EditTextStyle" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_xXlarge"
+                android:background="@drawable/bg_buttons"
+                android:text="@string/text_submit"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_xlarge" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@color/colorLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_medium">
+
+            <TextView
+                android:id="@+id/note1TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:gravity="left"
+                android:text="@string/text_node1"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_large" />
+
+            <TextView
+                android:id="@+id/note2TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_min_small"
+                android:gravity="left"
+                android:text="@string/text_node2"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_large" />
+
+            <TextView
+                android:id="@+id/note3TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_min_small"
+                android:gravity="left"
+                android:text="@string/text_node3"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_large" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,74 @@
+[
+    {
+        "outputFile": "D:\\Android_Workspace\\BitPayAndroid\\sliderlibrary\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "C:\\Users\\Codeslay-03\\.android\\build-cache\\fabdca124bc3df532543ed0c1451446b5c5f1036\\output\\res\\values-v18\\values-v18.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 280,
+                        "endColumn": 48,
+                        "endOffset": 324
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\Android_Workspace\\BitPay\\sliderlibrary\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "C:\\Users\\Codeslay-03\\.android\\build-cache\\fabdca124bc3df532543ed0c1451446b5c5f1036\\output\\res\\values-v18\\values-v18.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 280,
+                        "endColumn": 48,
+                        "endOffset": 324
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "E:\\deepak\\updatedBitpay\\sliderlibrary\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "C:\\Users\\TNS\\.android\\build-cache\\f28484b599fcf471ed541b70a5dad78dfe89335c\\output\\res\\values-v18\\values-v18.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 280,
+                        "endColumn": 48,
+                        "endOffset": 324
+                    }
+                }
+            }
+        ]
+    }
+]
